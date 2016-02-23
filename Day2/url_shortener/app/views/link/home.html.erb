@@ -1,0 +1,27 @@
+
+<h1>Add a new url</h1>
+
+<form action="/add" method="POST">
+  <div>
+    <label for="contact_name">Name</label>
+    <input type="text" name="shortlink" id="shortlink">
+  </div>
+
+  <button type="submit">Add</button>
+  <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+</form>
+
+
+<h3>Short URL:</h3>
+<ul>
+  <% @links.each do |link| %>
+    
+    <li> <a href="<%= "/#{link.short_url}" %>">  <%= "#{link.short_url}" %> </a> </li>
+
+  <% end %>
+</ul>
+
+<h3>Most visited pages</h3>
+
+<a href="/most_visited_pages"> Go </a>
