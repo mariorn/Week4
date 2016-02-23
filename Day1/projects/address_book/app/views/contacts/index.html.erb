@@ -1,0 +1,23 @@
+<h1>Your Contacts:</h1>
+<ul>
+  <% @contacts.each do |contact| %>
+    
+    <li> 
+        <a href="/show/<%= "#{contact.id}" %>"> <%= "#{contact.name}" %>  </a>
+    </li>
+
+  <% end %>
+</ul>
+
+<a href="/new">New contact</a>
+
+<form action="/search" method="POST">
+  <div>
+    <button type="submit">Search name by initial letter</button>
+    <input type="text" name="contact[letter]" id="contact_letter" placeholder="Search by name">
+    
+  </div>
+  
+  <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+</form>

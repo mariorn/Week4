@@ -1,0 +1,12 @@
+<h1>Your Favourites Contacts:</h1>
+<ul>
+  <% @favourites.each do |contact| %>
+    
+    <li> 
+        <a href="/show/<%= "#{contact.id}" %>"> <%= "#{contact.name}" %>  </a>
+    </li>
+
+  <% end %>
+</ul>
+
+<a href="/contacts">List</a>

@@ -1,0 +1,2442 @@
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateContacts (20160222171619)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "phone" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160222171619"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateContacts (20160222171619)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "phone" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160222171619"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 0"], ["address", "Adress 0"], ["phone", "Phone 0"], ["email", "Email 0"], ["created_at", "2016-02-22 17:30:46.961340"], ["updated_at", "2016-02-22 17:30:46.961340"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 1"], ["address", "Adress 1"], ["phone", "Phone 1"], ["email", "Email 1"], ["created_at", "2016-02-22 17:30:46.963882"], ["updated_at", "2016-02-22 17:30:46.963882"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 2"], ["address", "Adress 2"], ["phone", "Phone 2"], ["email", "Email 2"], ["created_at", "2016-02-22 17:30:46.966425"], ["updated_at", "2016-02-22 17:30:46.966425"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 3"], ["address", "Adress 3"], ["phone", "Phone 3"], ["email", "Email 3"], ["created_at", "2016-02-22 17:30:46.968754"], ["updated_at", "2016-02-22 17:30:46.968754"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 4"], ["address", "Adress 4"], ["phone", "Phone 4"], ["email", "Email 4"], ["created_at", "2016-02-22 17:30:46.970862"], ["updated_at", "2016-02-22 17:30:46.970862"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 5"], ["address", "Adress 5"], ["phone", "Phone 5"], ["email", "Email 5"], ["created_at", "2016-02-22 17:30:46.973242"], ["updated_at", "2016-02-22 17:30:46.973242"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 6"], ["address", "Adress 6"], ["phone", "Phone 6"], ["email", "Email 6"], ["created_at", "2016-02-22 17:30:46.975267"], ["updated_at", "2016-02-22 17:30:46.975267"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 7"], ["address", "Adress 7"], ["phone", "Phone 7"], ["email", "Email 7"], ["created_at", "2016-02-22 17:30:46.977439"], ["updated_at", "2016-02-22 17:30:46.977439"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 8"], ["address", "Adress 8"], ["phone", "Phone 8"], ["email", "Email 8"], ["created_at", "2016-02-22 17:30:46.979808"], ["updated_at", "2016-02-22 17:30:46.979808"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 9"], ["address", "Adress 9"], ["phone", "Phone 9"], ["email", "Email 9"], ["created_at", "2016-02-22 17:30:46.981740"], ["updated_at", "2016-02-22 17:30:46.981740"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 10"], ["address", "Adress 10"], ["phone", "Phone 10"], ["email", "Email 10"], ["created_at", "2016-02-22 17:30:46.983789"], ["updated_at", "2016-02-22 17:30:46.983789"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 11"], ["address", "Adress 11"], ["phone", "Phone 11"], ["email", "Email 11"], ["created_at", "2016-02-22 17:30:46.985742"], ["updated_at", "2016-02-22 17:30:46.985742"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 12"], ["address", "Adress 12"], ["phone", "Phone 12"], ["email", "Email 12"], ["created_at", "2016-02-22 17:30:46.987681"], ["updated_at", "2016-02-22 17:30:46.987681"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 13"], ["address", "Adress 13"], ["phone", "Phone 13"], ["email", "Email 13"], ["created_at", "2016-02-22 17:30:46.989723"], ["updated_at", "2016-02-22 17:30:46.989723"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 14"], ["address", "Adress 14"], ["phone", "Phone 14"], ["email", "Email 14"], ["created_at", "2016-02-22 17:30:46.991585"], ["updated_at", "2016-02-22 17:30:46.991585"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 15"], ["address", "Adress 15"], ["phone", "Phone 15"], ["email", "Email 15"], ["created_at", "2016-02-22 17:30:46.993659"], ["updated_at", "2016-02-22 17:30:46.993659"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 16"], ["address", "Adress 16"], ["phone", "Phone 16"], ["email", "Email 16"], ["created_at", "2016-02-22 17:30:46.996637"], ["updated_at", "2016-02-22 17:30:46.996637"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 17"], ["address", "Adress 17"], ["phone", "Phone 17"], ["email", "Email 17"], ["created_at", "2016-02-22 17:30:46.998550"], ["updated_at", "2016-02-22 17:30:46.998550"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 18"], ["address", "Adress 18"], ["phone", "Phone 18"], ["email", "Email 18"], ["created_at", "2016-02-22 17:30:47.000470"], ["updated_at", "2016-02-22 17:30:47.000470"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 19"], ["address", "Adress 19"], ["phone", "Phone 19"], ["email", "Email 19"], ["created_at", "2016-02-22 17:30:47.002459"], ["updated_at", "2016-02-22 17:30:47.002459"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mContact Load (3.7ms)[0m  SELECT "contacts".* FROM "contacts"
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 18:33:08 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 1265ms (Views: 1254.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 18:33:09 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 18:33:09 +0100
+
+
+Started GET "/new" for ::1 at 2016-02-22 18:43:48 +0100
+Processing by ContactsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (0 for 4)):
+  app/controllers/contacts_controller.rb:7:in `new'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.6ms)
+
+
+Started GET "/new" for ::1 at 2016-02-22 18:44:13 +0100
+Processing by ContactsController#new as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (0 for 4)):
+  app/controllers/contacts_controller.rb:7:in `new'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (83.5ms)
+
+
+Started GET "/new" for ::1 at 2016-02-22 18:44:29 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 18:44:30 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 18:44:30 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 18:44:30 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 18:44:30 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 18:44:30 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 18:44:30 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 18:44:30 +0100
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 18:44:55 +0100
+
+ActionController::RoutingError (No route matches [POST] "/contacts"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.0ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.6ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (83.6ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 18:47:59 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Mario", "address"=>"Calle General Ricardos", "phone"=>"644535262", "email"=>"mario@mario.com"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.5.1) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.5.1) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.5.1) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.0ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (87.0ms)
+
+
+Started GET "/new" for ::1 at 2016-02-22 18:48:40 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 18:48:50 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Mario Romero Nieto", "address"=>"Calle General Ricardos\r\nnúmero 4, CUARTO 2", "phone"=>"699836469", "email"=>"mario@mario.com"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.5.1) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.5.1) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.5.1) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.0ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (82.4ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 18:49:44 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Mario Romero Nieto", "address"=>"Calle General Ricardos\r\nnúmero 4, CUARTO 2", "phone"=>"699836469", "email"=>"mario@mario.com"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.5.1) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.5.1) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.5.1) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.7ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.0ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (92.1ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 18:49:47 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Mario Romero Nieto", "address"=>"Calle General Ricardos\r\nnúmero 4, CUARTO 2", "phone"=>"699836469", "email"=>"mario@mario.com"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.5.1) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.5.1) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.5.1) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.7ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (84.5ms)
+
+
+Started GET "/" for ::1 at 2016-02-22 18:50:28 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5.1/lib/rails/templates/rails/welcome/index.html.erb (0.6ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 18:50:32 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.7ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/new" for ::1 at 2016-02-22 18:50:37 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 18:58:40 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Mario Romero Nieto", "address"=>"Calle General Ricardos\r\nnúmero 4, CUARTO 2", "phone"=>"699836469", "email"=>"mario@mario.com"}, "authenticity_token"=>"daVXmn4XCS9v6eeTlnYhdSA5L6qOGi2nE6Bhp+1HPB8C8jha5xZ55Opj9/TKXQbKXTpZ2Xu6P4RxdsvDRBjLhQ=="}
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 18:59:32 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Mario Romero Nieto", "address"=>"Calle General Ricardos\r\nnúmero 4, CUARTO 2", "phone"=>"699836469", "email"=>"mario@mario.com"}, "authenticity_token"=>"daVXmn4XCS9v6eeTlnYhdSA5L6qOGi2nE6Bhp+1HPB8C8jha5xZ55Opj9/TKXQbKXTpZ2Xu6P4RxdsvDRBjLhQ=="}
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateContacts (20160222171619)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "phone" integer, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160222171619"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 0"], ["address", "Adress 0"], ["phone", 0], ["email", "Email 0"], ["created_at", "2016-02-22 18:02:46.943440"], ["updated_at", "2016-02-22 18:02:46.943440"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 1"], ["address", "Adress 1"], ["phone", 0], ["email", "Email 1"], ["created_at", "2016-02-22 18:02:46.947265"], ["updated_at", "2016-02-22 18:02:46.947265"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 2"], ["address", "Adress 2"], ["phone", 0], ["email", "Email 2"], ["created_at", "2016-02-22 18:02:46.949538"], ["updated_at", "2016-02-22 18:02:46.949538"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 3"], ["address", "Adress 3"], ["phone", 0], ["email", "Email 3"], ["created_at", "2016-02-22 18:02:46.951672"], ["updated_at", "2016-02-22 18:02:46.951672"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 4"], ["address", "Adress 4"], ["phone", 0], ["email", "Email 4"], ["created_at", "2016-02-22 18:02:46.953825"], ["updated_at", "2016-02-22 18:02:46.953825"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 5"], ["address", "Adress 5"], ["phone", 0], ["email", "Email 5"], ["created_at", "2016-02-22 18:02:46.956777"], ["updated_at", "2016-02-22 18:02:46.956777"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 6"], ["address", "Adress 6"], ["phone", 0], ["email", "Email 6"], ["created_at", "2016-02-22 18:02:46.960496"], ["updated_at", "2016-02-22 18:02:46.960496"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 7"], ["address", "Adress 7"], ["phone", 0], ["email", "Email 7"], ["created_at", "2016-02-22 18:02:46.963945"], ["updated_at", "2016-02-22 18:02:46.963945"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 8"], ["address", "Adress 8"], ["phone", 0], ["email", "Email 8"], ["created_at", "2016-02-22 18:02:46.966386"], ["updated_at", "2016-02-22 18:02:46.966386"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 9"], ["address", "Adress 9"], ["phone", 0], ["email", "Email 9"], ["created_at", "2016-02-22 18:02:46.969569"], ["updated_at", "2016-02-22 18:02:46.969569"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 10"], ["address", "Adress 10"], ["phone", 0], ["email", "Email 10"], ["created_at", "2016-02-22 18:02:46.971563"], ["updated_at", "2016-02-22 18:02:46.971563"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 11"], ["address", "Adress 11"], ["phone", 0], ["email", "Email 11"], ["created_at", "2016-02-22 18:02:46.973548"], ["updated_at", "2016-02-22 18:02:46.973548"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 12"], ["address", "Adress 12"], ["phone", 0], ["email", "Email 12"], ["created_at", "2016-02-22 18:02:46.975572"], ["updated_at", "2016-02-22 18:02:46.975572"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 13"], ["address", "Adress 13"], ["phone", 0], ["email", "Email 13"], ["created_at", "2016-02-22 18:02:46.977880"], ["updated_at", "2016-02-22 18:02:46.977880"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 14"], ["address", "Adress 14"], ["phone", 0], ["email", "Email 14"], ["created_at", "2016-02-22 18:02:46.980930"], ["updated_at", "2016-02-22 18:02:46.980930"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 15"], ["address", "Adress 15"], ["phone", 0], ["email", "Email 15"], ["created_at", "2016-02-22 18:02:46.984335"], ["updated_at", "2016-02-22 18:02:46.984335"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 16"], ["address", "Adress 16"], ["phone", 0], ["email", "Email 16"], ["created_at", "2016-02-22 18:02:46.987910"], ["updated_at", "2016-02-22 18:02:46.987910"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 17"], ["address", "Adress 17"], ["phone", 0], ["email", "Email 17"], ["created_at", "2016-02-22 18:02:46.990125"], ["updated_at", "2016-02-22 18:02:46.990125"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 18"], ["address", "Adress 18"], ["phone", 0], ["email", "Email 18"], ["created_at", "2016-02-22 18:02:46.992128"], ["updated_at", "2016-02-22 18:02:46.992128"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 19"], ["address", "Adress 19"], ["phone", 0], ["email", "Email 19"], ["created_at", "2016-02-22 18:02:46.994125"], ["updated_at", "2016-02-22 18:02:46.994125"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 19:04:42 +0100
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Mario Romero Nieto", "address"=>"Calle General Ricardos\r\nnúmero 4, CUARTO 2", "phone"=>"699836469", "email"=>"mario@mario.com"}, "authenticity_token"=>"daVXmn4XCS9v6eeTlnYhdSA5L6qOGi2nE6Bhp+1HPB8C8jha5xZ55Opj9/TKXQbKXTpZ2Xu6P4RxdsvDRBjLhQ=="}
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 19:05:49 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Mario Romero Nieto", "address"=>"Calle General Ricardos\r\nnúmero 4, CUARTO 2", "phone"=>"699836469", "email"=>"mario@mario.com"}, "authenticity_token"=>"daVXmn4XCS9v6eeTlnYhdSA5L6qOGi2nE6Bhp+1HPB8C8jha5xZ55Opj9/TKXQbKXTpZ2Xu6P4RxdsvDRBjLhQ=="}
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 19:06:38 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Mario Romero Nieto", "address"=>"Calle General Ricardos\r\nnúmero 4, CUARTO 2", "phone"=>"699836469", "email"=>"mario@mario.com"}, "authenticity_token"=>"daVXmn4XCS9v6eeTlnYhdSA5L6qOGi2nE6Bhp+1HPB8C8jha5xZ55Opj9/TKXQbKXTpZ2Xu6P4RxdsvDRBjLhQ=="}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Mario Romero Nieto"], ["address", "Calle General Ricardos\r\nnúmero 4, CUARTO 2"], ["phone", 699836469], ["email", "mario@mario.com"], ["created_at", "2016-02-22 18:06:38.738877"], ["updated_at", "2016-02-22 18:06:38.738877"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 17ms (Views: 3.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 19:06:54 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 19:10:35 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 19:10:35 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 19:10:35 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 19:10:35 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 19:10:35 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 19:10:35 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 19:10:35 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 19:10:35 +0100
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 19:10:37 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 19:10:37 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 19:10:37 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 19:10:37 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 19:10:37 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 19:10:37 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 19:10:37 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 19:10:37 +0100
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 19:12:30 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.9ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 19:12:30 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 19:12:30 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 19:12:30 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 19:12:30 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 19:12:30 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 19:12:30 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 19:12:30 +0100
+
+
+Started GET "/new" for ::1 at 2016-02-22 19:12:34 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 19:12:54 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"pepe", "address"=>"pepepepepe", "phone"=>"2343242", "email"=>"pepepep@pepep.com"}, "authenticity_token"=>"yHyF5aF3/Q8qdtjYY26yHItlTm6TPL1+Eyj2rQ90Uza/K+olOHaNxK/8yL8/RZWj9mY4HWacr11x/lzJpiukrA=="}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "pepe"], ["address", "pepepepepe"], ["phone", 2343242], ["email", "pepepep@pepep.com"], ["created_at", "2016-02-22 18:12:54.332091"], ["updated_at", "2016-02-22 18:12:54.332091"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 19:12:54 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 19:13:46 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.5ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 19:13:47 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 19:13:47 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 19:13:47 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 19:13:47 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 19:13:47 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 19:13:47 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 19:13:47 +0100
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateContacts (20160222171619)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "phone" integer, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160222171619"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 0"], ["address", "Adress 0"], ["phone", 0], ["email", "Email 0"], ["created_at", "2016-02-22 18:15:10.341071"], ["updated_at", "2016-02-22 18:15:10.341071"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 1"], ["address", "Adress 1"], ["phone", 1], ["email", "Email 1"], ["created_at", "2016-02-22 18:15:10.343363"], ["updated_at", "2016-02-22 18:15:10.343363"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 2"], ["address", "Adress 2"], ["phone", 2], ["email", "Email 2"], ["created_at", "2016-02-22 18:15:10.345974"], ["updated_at", "2016-02-22 18:15:10.345974"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 3"], ["address", "Adress 3"], ["phone", 3], ["email", "Email 3"], ["created_at", "2016-02-22 18:15:10.349713"], ["updated_at", "2016-02-22 18:15:10.349713"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 4"], ["address", "Adress 4"], ["phone", 4], ["email", "Email 4"], ["created_at", "2016-02-22 18:15:10.353161"], ["updated_at", "2016-02-22 18:15:10.353161"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 5"], ["address", "Adress 5"], ["phone", 5], ["email", "Email 5"], ["created_at", "2016-02-22 18:15:10.361630"], ["updated_at", "2016-02-22 18:15:10.361630"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 6"], ["address", "Adress 6"], ["phone", 6], ["email", "Email 6"], ["created_at", "2016-02-22 18:15:10.364035"], ["updated_at", "2016-02-22 18:15:10.364035"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 7"], ["address", "Adress 7"], ["phone", 7], ["email", "Email 7"], ["created_at", "2016-02-22 18:15:10.367194"], ["updated_at", "2016-02-22 18:15:10.367194"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 8"], ["address", "Adress 8"], ["phone", 8], ["email", "Email 8"], ["created_at", "2016-02-22 18:15:10.369857"], ["updated_at", "2016-02-22 18:15:10.369857"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 9"], ["address", "Adress 9"], ["phone", 9], ["email", "Email 9"], ["created_at", "2016-02-22 18:15:10.372267"], ["updated_at", "2016-02-22 18:15:10.372267"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 10"], ["address", "Adress 10"], ["phone", 10], ["email", "Email 10"], ["created_at", "2016-02-22 18:15:10.375866"], ["updated_at", "2016-02-22 18:15:10.375866"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 11"], ["address", "Adress 11"], ["phone", 11], ["email", "Email 11"], ["created_at", "2016-02-22 18:15:10.377630"], ["updated_at", "2016-02-22 18:15:10.377630"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 12"], ["address", "Adress 12"], ["phone", 12], ["email", "Email 12"], ["created_at", "2016-02-22 18:15:10.379598"], ["updated_at", "2016-02-22 18:15:10.379598"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 13"], ["address", "Adress 13"], ["phone", 13], ["email", "Email 13"], ["created_at", "2016-02-22 18:15:10.381557"], ["updated_at", "2016-02-22 18:15:10.381557"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 14"], ["address", "Adress 14"], ["phone", 14], ["email", "Email 14"], ["created_at", "2016-02-22 18:15:10.384580"], ["updated_at", "2016-02-22 18:15:10.384580"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 15"], ["address", "Adress 15"], ["phone", 15], ["email", "Email 15"], ["created_at", "2016-02-22 18:15:10.386691"], ["updated_at", "2016-02-22 18:15:10.386691"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 16"], ["address", "Adress 16"], ["phone", 16], ["email", "Email 16"], ["created_at", "2016-02-22 18:15:10.388656"], ["updated_at", "2016-02-22 18:15:10.388656"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 17"], ["address", "Adress 17"], ["phone", 17], ["email", "Email 17"], ["created_at", "2016-02-22 18:15:10.390570"], ["updated_at", "2016-02-22 18:15:10.390570"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 18"], ["address", "Adress 18"], ["phone", 18], ["email", "Email 18"], ["created_at", "2016-02-22 18:15:10.392478"], ["updated_at", "2016-02-22 18:15:10.392478"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 19"], ["address", "Adress 19"], ["phone", 19], ["email", "Email 19"], ["created_at", "2016-02-22 18:15:10.394436"], ["updated_at", "2016-02-22 18:15:10.394436"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 19:15:28 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 19:15:28 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 19:15:28 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 19:15:28 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 19:15:28 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 19:15:28 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 19:15:28 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 19:15:28 +0100
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 19:20:47 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 19:20:47 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 19:20:47 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 19:20:47 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 19:20:47 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 19:20:47 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 19:20:47 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 19:20:47 +0100
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 19:25:30 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 19:25:30 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 19:25:30 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 19:25:30 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 19:25:30 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 19:25:30 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 19:25:30 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 19:25:30 +0100
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 19:26:57 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 19:26:57 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 19:26:57 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 19:26:57 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 19:26:57 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 19:26:57 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 19:26:57 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 19:26:57 +0100
+
+
+Started GET "/show/12" for ::1 at 2016-02-22 19:26:59 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"12"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 12]]
+  Rendered contacts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 14.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/show/13" for ::1 at 2016-02-22 19:27:34 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"13"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered contacts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/show/17" for ::1 at 2016-02-22 19:27:36 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"17"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/show/2" for ::1 at 2016-02-22 19:27:41 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"2"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/show/15" for ::1 at 2016-02-22 19:27:43 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"15"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 15]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/show/19" for ::1 at 2016-02-22 19:27:45 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"19"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 19]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2016-02-22 19:27:49 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 19:28:01 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Manu", "address"=>"manulandia", "phone"=>"498493", "email"=>"manu@manu.com"}, "authenticity_token"=>"M66L6bNVGaSNlqq+3vnadZX2I68aug2x8zNVH+hHGrxE+eQpKlRpbwgcutmC0v3K6PVV3O8aH5KR5f97QRjtJg=="}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Manu"], ["address", "manulandia"], ["phone", 498493], ["email", "manu@manu.com"], ["created_at", "2016-02-22 18:28:01.252496"], ["updated_at", "2016-02-22 18:28:01.252496"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 19:28:01 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/show/21" for ::1 at 2016-02-22 19:28:03 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"21"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered contacts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2016-02-22 19:28:57 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for ::1 at 2016-02-22 19:30:47 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 19:30:59 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"javi", "address"=>"javilandia", "phone"=>"848484", "email"=>"javi@javi.com"}, "authenticity_token"=>"iFNrCSWrMABNjBxrUBGVOQKuey9Ui6O/LlGpDUk5n3n/BATJvKpAy8gGDAwMOrKGf60NXKErsZxMhwNp4GZo4w=="}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "javi"], ["address", "javilandia"], ["phone", 848484], ["email", "javi@javi.com"], ["created_at", "2016-02-22 18:30:59.041735"], ["updated_at", "2016-02-22 18:30:59.041735"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 10ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 19:30:59 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/show/22" for ::1 at 2016-02-22 19:31:01 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"22"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 19:31:10 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 19:31:10 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 19:31:10 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 19:31:10 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 19:31:10 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 19:31:10 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 19:31:10 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 19:31:10 +0100
+
+
+Started GET "/show/22" for ::1 at 2016-02-22 19:31:15 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"22"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/show/18" for ::1 at 2016-02-22 19:36:20 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"18"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 18]]
+  Rendered contacts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/show/7" for ::1 at 2016-02-22 19:36:22 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"7"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/show/9" for ::1 at 2016-02-22 19:36:27 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"9"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/show/4" for ::1 at 2016-02-22 20:01:01 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"4"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 27ms (Views: 20.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/new" for ::1 at 2016-02-22 20:01:05 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 20:01:23 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"joququq", "address"=>"jejjfjef", "phone"=>"3943834", "email"=>"masd@mare.com"}, "authenticity_token"=>"ByCr3BPu/d63IALxgZcb/fUnAGIWCjE0IlzxHiwsYnBwd8Qciu+NFTKqEpbdvDxCiCR2EeOqIxdAilt6hXOV6g=="}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "joququq"], ["address", "jejjfjef"], ["phone", 3943834], ["email", "masd@mare.com"], ["created_at", "2016-02-22 19:01:23.766503"], ["updated_at", "2016-02-22 19:01:23.766503"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:01:23 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/show/23" for ::1 at 2016-02-22 20:01:25 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"23"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 23]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/show/5" for ::1 at 2016-02-22 20:04:17 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"5"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2016-02-22 20:06:41 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 20:06:52 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"pepe", "address"=>"", "phone"=>"73738", "email"=>"pepepep@pepep.com"}, "authenticity_token"=>"hf/8f9J/UafwDKL8FTaeuLyDodNDCC8EbJdjVahO6ufyqJO/S34hbHWGsptJHbkHwYDXoLaoPScOQckxAREdfQ=="}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "pepe"], ["address", ""], ["phone", 73738], ["email", "pepepep@pepep.com"], ["created_at", "2016-02-22 19:06:52.745388"], ["updated_at", "2016-02-22 19:06:52.745388"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:06:52 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 20:07:38 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"pepe", "address"=>"", "phone"=>"73738", "email"=>"pepepep@pepep.com"}, "authenticity_token"=>"fZ2Zt/9/rBWl0T4m7TcfKI3jQDGQXzXu1ZCYlZlPXSIKyvZ3Zn7c3iBbLkGxHDiX8OA2QmX/J823RjLxMBCquA=="}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "pepe"], ["address", ""], ["phone", 73738], ["email", "pepepep@pepep.com"], ["created_at", "2016-02-22 19:07:38.200667"], ["updated_at", "2016-02-22 19:07:38.200667"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 12ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:07:38 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:07:40 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:07:40 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:07:40 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:07:40 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:07:40 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:07:40 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:07:40 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:07:40 +0100
+
+
+Started GET "/new" for ::1 at 2016-02-22 20:07:43 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 20:07:54 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"manolo", "address"=>"", "phone"=>"242", "email"=>"manolo@manolo.com"}, "authenticity_token"=>"bGFxVjfqPvz00lAl6ICj3COCmlt/qbfP0R9YZqu6mdYbNh6WrutON3FYQEK0q4RjXoHsKIoJpeyzyfICAuVuTA=="}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "manolo"], ["address", ""], ["phone", 242], ["email", "manolo@manolo.com"], ["created_at", "2016-02-22 19:07:54.030201"], ["updated_at", "2016-02-22 19:07:54.030201"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:07:54 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:08:20 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:08:20 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:08:20 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:08:20 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:08:20 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:08:20 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:08:20 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:08:20 +0100
+
+
+Started GET "/new" for ::1 at 2016-02-22 20:08:22 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 20:08:30 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"si", "address"=>"", "phone"=>"3245", "email"=>"no@no.com"}, "authenticity_token"=>"bPcHXf7j1T6QRjI+DeixD1FxAkVm6W+jdhYUZ6WBXVoboGidZ+Kl9RXMIllRw5awLHJ0NpNJfYAUwL4DDN6qwA=="}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "si"], ["address", ""], ["phone", 3245], ["email", "no@no.com"], ["created_at", "2016-02-22 19:08:30.088451"], ["updated_at", "2016-02-22 19:08:30.088451"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:08:30 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:09:08 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.7ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:09:08 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:09:08 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:09:08 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:09:08 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:09:08 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:09:08 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:09:08 +0100
+
+
+Started GET "/new" for ::1 at 2016-02-22 20:09:09 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 20:09:16 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"ala", "address"=>"", "phone"=>"234", "email"=>""}, "authenticity_token"=>"zhM0FgH1Y4Z6coF0GVRAdGWsNJfkXTm9uJW3rEC8xiC5RFvWmPQTTf/4kRNFf2fLGK9C5BH9K57aQx3I6eMxug=="}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ala"], ["address", ""], ["phone", 234], ["email", ""], ["created_at", "2016-02-22 19:09:16.614234"], ["updated_at", "2016-02-22 19:09:16.614234"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:09:16 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:13:51 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:13:51 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:13:51 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:13:51 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:13:51 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:13:51 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:13:51 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:13:51 +0100
+
+
+Started GET "/new" for ::1 at 2016-02-22 20:13:54 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 20:14:00 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"ww", "address"=>"", "phone"=>"", "email"=>""}, "authenticity_token"=>"7vt/+iGiiJV0dPKW3/nUSQlh5kzPNIcD5wrrNph86/CZrBA6uKP4XvH+4vGD0vP2dGKQPzqUlSCF3EFSMSMcag=="}
+Redirected to http://localhost:3000/error
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/error" for ::1 at 2016-02-22 20:14:00 +0100
+Processing by ContactsController#error as HTML
+  Rendered contacts/error.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 20:14:35 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"ww", "address"=>"", "phone"=>"", "email"=>""}, "authenticity_token"=>"wZqKmmnPwO5Ljd6oxttFUMh/t5mPldzSej/wKUB778m2zeVa8M6wJc4Hzs+a8GLvtXzB6no1zvEY6VpN6SQYUw=="}
+Redirected to http://localhost:3000/error
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/error" for ::1 at 2016-02-22 20:14:35 +0100
+Processing by ContactsController#error as HTML
+  Rendered contacts/error.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:14:36 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.5ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:14:48 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:14:48 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:14:48 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:14:48 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:14:48 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:14:48 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:14:48 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:14:48 +0100
+
+
+Started GET "/error" for ::1 at 2016-02-22 20:14:50 +0100
+Processing by ContactsController#error as HTML
+  Rendered contacts/error.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/error" for ::1 at 2016-02-22 20:14:50 +0100
+Processing by ContactsController#error as HTML
+  Rendered contacts/error.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:14:51 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:14:51 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:14:51 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:14:51 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:14:51 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:14:51 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:14:51 +0100
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:14:51 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateContacts (20160222171619)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "phone" integer, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160222171619"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to AddFavouriteToContacts (20160222192123)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "contacts" ADD "favourite" boolean
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160222192123"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 0"], ["address", "Adress 0"], ["phone", 0], ["email", "Email 0"], ["created_at", "2016-02-22 19:21:51.586737"], ["updated_at", "2016-02-22 19:21:51.586737"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 1"], ["address", "Adress 1"], ["phone", 1], ["email", "Email 1"], ["created_at", "2016-02-22 19:21:51.588939"], ["updated_at", "2016-02-22 19:21:51.588939"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 2"], ["address", "Adress 2"], ["phone", 2], ["email", "Email 2"], ["created_at", "2016-02-22 19:21:51.590781"], ["updated_at", "2016-02-22 19:21:51.590781"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 3"], ["address", "Adress 3"], ["phone", 3], ["email", "Email 3"], ["created_at", "2016-02-22 19:21:51.592675"], ["updated_at", "2016-02-22 19:21:51.592675"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 4"], ["address", "Adress 4"], ["phone", 4], ["email", "Email 4"], ["created_at", "2016-02-22 19:21:51.596798"], ["updated_at", "2016-02-22 19:21:51.596798"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 5"], ["address", "Adress 5"], ["phone", 5], ["email", "Email 5"], ["created_at", "2016-02-22 19:21:51.599511"], ["updated_at", "2016-02-22 19:21:51.599511"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 6"], ["address", "Adress 6"], ["phone", 6], ["email", "Email 6"], ["created_at", "2016-02-22 19:21:51.601877"], ["updated_at", "2016-02-22 19:21:51.601877"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 7"], ["address", "Adress 7"], ["phone", 7], ["email", "Email 7"], ["created_at", "2016-02-22 19:21:51.605090"], ["updated_at", "2016-02-22 19:21:51.605090"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 8"], ["address", "Adress 8"], ["phone", 8], ["email", "Email 8"], ["created_at", "2016-02-22 19:21:51.606961"], ["updated_at", "2016-02-22 19:21:51.606961"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 9"], ["address", "Adress 9"], ["phone", 9], ["email", "Email 9"], ["created_at", "2016-02-22 19:21:51.608773"], ["updated_at", "2016-02-22 19:21:51.608773"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 10"], ["address", "Adress 10"], ["phone", 10], ["email", "Email 10"], ["created_at", "2016-02-22 19:21:51.610764"], ["updated_at", "2016-02-22 19:21:51.610764"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 11"], ["address", "Adress 11"], ["phone", 11], ["email", "Email 11"], ["created_at", "2016-02-22 19:21:51.612678"], ["updated_at", "2016-02-22 19:21:51.612678"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 12"], ["address", "Adress 12"], ["phone", 12], ["email", "Email 12"], ["created_at", "2016-02-22 19:21:51.614448"], ["updated_at", "2016-02-22 19:21:51.614448"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 13"], ["address", "Adress 13"], ["phone", 13], ["email", "Email 13"], ["created_at", "2016-02-22 19:21:51.616272"], ["updated_at", "2016-02-22 19:21:51.616272"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 14"], ["address", "Adress 14"], ["phone", 14], ["email", "Email 14"], ["created_at", "2016-02-22 19:21:51.618797"], ["updated_at", "2016-02-22 19:21:51.618797"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 15"], ["address", "Adress 15"], ["phone", 15], ["email", "Email 15"], ["created_at", "2016-02-22 19:21:51.621053"], ["updated_at", "2016-02-22 19:21:51.621053"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 16"], ["address", "Adress 16"], ["phone", 16], ["email", "Email 16"], ["created_at", "2016-02-22 19:21:51.623798"], ["updated_at", "2016-02-22 19:21:51.623798"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 17"], ["address", "Adress 17"], ["phone", 17], ["email", "Email 17"], ["created_at", "2016-02-22 19:21:51.626852"], ["updated_at", "2016-02-22 19:21:51.626852"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Contact 18"], ["address", "Adress 18"], ["phone", 18], ["email", "Email 18"], ["created_at", "2016-02-22 19:21:51.628732"], ["updated_at", "2016-02-22 19:21:51.628732"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Contact 19"], ["address", "Adress 19"], ["phone", 19], ["email", "Email 19"], ["created_at", "2016-02-22 19:21:51.630810"], ["updated_at", "2016-02-22 19:21:51.630810"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:29:49 +0100
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:29:49 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:29:49 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:29:49 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:29:49 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:29:49 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:29:49 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:29:49 +0100
+
+
+Started GET "/show/11" for ::1 at 2016-02-22 20:29:51 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"11"}
+  [1m[35mContact Load (0.6ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered contacts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/favourite" for ::1 at 2016-02-22 20:29:53 +0100
+Processing by ContactsController#favourite as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Contact with 'id'=):
+  app/controllers/contacts_controller.rb:38:in `favourite'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.6ms)
+
+
+Started GET "/favourite" for ::1 at 2016-02-22 20:29:53 +0100
+Processing by ContactsController#favourite as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Contact with 'id'=):
+  app/controllers/contacts_controller.rb:38:in `favourite'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.0ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.9ms)
+
+
+Started GET "/show/11" for ::1 at 2016-02-22 20:31:19 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"11"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered contacts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 24.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:31:19 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:31:19 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:31:19 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:31:19 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:31:19 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:31:19 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:31:19 +0100
+
+
+Started GET "/favourite/11" for ::1 at 2016-02-22 20:31:20 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"11"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  UPDATE "contacts" SET "favourite" = ?, "updated_at" = ? WHERE "contacts"."id" = ?  [["favourite", "t"], ["updated_at", "2016-02-22 19:31:20.459463"], ["id", 11]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.5ms)
+
+NoMethodError (undefined method `all_favourits' for #<Class:0x007fbd020df860>):
+  app/controllers/contacts_controller.rb:41:in `favourite'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (81.7ms)
+
+
+Started GET "/favourite/11" for ::1 at 2016-02-22 20:31:20 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"11"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `all_favourits' for #<Class:0x007fbd020df860>):
+  app/controllers/contacts_controller.rb:41:in `favourite'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.9ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (84.1ms)
+
+
+Started GET "/show/11" for ::1 at 2016-02-22 20:31:53 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"11"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered contacts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 25ms (Views: 17.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:31:53 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:31:53 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:31:53 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:31:53 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:31:53 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:31:53 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:31:53 +0100
+
+
+Started GET "/favourite/11" for ::1 at 2016-02-22 20:31:54 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"11"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `all_favourites' for #<Class:0x007fbd05a51be8>):
+  app/controllers/contacts_controller.rb:41:in `favourite'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (81.7ms)
+
+
+Started GET "/favourite/11" for ::1 at 2016-02-22 20:31:54 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"11"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `all_favourites' for #<Class:0x007fbd05a51be8>):
+  app/controllers/contacts_controller.rb:41:in `favourite'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.7ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.9ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (87.5ms)
+
+
+Started GET "/favourite/11" for ::1 at 2016-02-22 20:32:33 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"11"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.0ms)
+
+NoMethodError (undefined method `all_favourites' for #<Class:0x007fbd052b1b90>):
+  app/controllers/contacts_controller.rb:41:in `favourite'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.1ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (88.3ms)
+
+
+Started GET "/favourite/11" for ::1 at 2016-02-22 20:33:30 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"11"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/favourite.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Your Favourites Contacts:</h1>
+    2: <ul>
+    3:   <% @favourites.each do |contact| %>
+    4:     
+    5:     <li> 
+    6:         <a href="/show/<%= "#{contact.id}" %>"> <%= "#{contact.name}" %>  </a>
+  app/views/contacts/favourite.html.erb:3:in `_app_views_contacts_favourite_html_erb___4155803772812958490_70224923018140'
+  app/controllers/contacts_controller.rb:42:in `favourite'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (86.2ms)
+
+
+Started GET "/favourite/11" for ::1 at 2016-02-22 20:33:47 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"11"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/favourite.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 15.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:33:47 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:33:47 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:33:47 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:33:47 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:33:47 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:33:47 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:33:47 +0100
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:33:52 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/show/16" for ::1 at 2016-02-22 20:33:55 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"16"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 16]]
+  Rendered contacts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/favourite/16" for ::1 at 2016-02-22 20:33:57 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"16"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 16]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "contacts" SET "favourite" = ?, "updated_at" = ? WHERE "contacts"."id" = ?[0m  [["favourite", "t"], ["updated_at", "2016-02-22 19:33:57.084180"], ["id", 16]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/favourite.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 16.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/favourite/16" for ::1 at 2016-02-22 20:34:49 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"16"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 16]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/favourite.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 26ms (Views: 14.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:34:49 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:34:49 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:34:49 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:34:49 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:34:49 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:34:49 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:34:49 +0100
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:35:07 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/new" for ::1 at 2016-02-22 20:35:12 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for ::1 at 2016-02-22 20:35:20 +0100
+Processing by ContactsController#create as HTML
+  Parameters: {"contact"=>{"name"=>"Mario Romero Nieto", "address"=>"Calle General Ricardos\r\nnúmero 4, CUARTO 2", "phone"=>"699836469", "email"=>"mario@mario.com"}, "authenticity_token"=>"VwqsMr73q8Y5Pyfi7TY5+C2nhG9ow9ITFBIKATFd7JsgXcPyJ/bbDby1N4WxHR5HUKTyHJ1jwDB2xKBlmAIbAQ=="}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("name", "address", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Mario Romero Nieto"], ["address", "Calle General Ricardos\r\nnúmero 4, CUARTO 2"], ["phone", 699836469], ["email", "mario@mario.com"], ["created_at", "2016-02-22 19:35:20.755024"], ["updated_at", "2016-02-22 19:35:20.755024"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:35:20 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/show/21" for ::1 at 2016-02-22 20:35:22 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"21"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/favourite/21" for ::1 at 2016-02-22 20:35:26 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"21"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "contacts" SET "favourite" = ?, "updated_at" = ? WHERE "contacts"."id" = ?  [["favourite", "t"], ["updated_at", "2016-02-22 19:35:26.419789"], ["id", 21]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/favourite.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:35:31 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/show/21" for ::1 at 2016-02-22 20:35:43 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"21"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered contacts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/favourite/21" for ::1 at 2016-02-22 20:35:44 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"21"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 21]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/favourite.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/show/21" for ::1 at 2016-02-22 20:35:47 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"21"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/favourite/21" for ::1 at 2016-02-22 20:37:53 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"21"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/favourite.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:37:54 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/show/3" for ::1 at 2016-02-22 20:37:58 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"3"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered contacts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/favourite/3" for ::1 at 2016-02-22 20:41:05 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"3"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "contacts" SET "favourite" = ?, "updated_at" = ? WHERE "contacts"."id" = ?  [["favourite", "t"], ["updated_at", "2016-02-22 19:41:05.221139"], ["id", 3]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/favourite.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 16.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:41:06 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:48:08 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.5ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:48:08 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:48:08 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:48:08 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:48:08 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:48:08 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:48:08 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:48:08 +0100
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:48:55 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:48:55 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:48:55 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:48:55 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:48:55 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:48:55 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:48:55 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:48:55 +0100
+
+
+Started GET "/contacts" for ::1 at 2016-02-22 20:49:10 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:49:10 +0100
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:49:10 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:49:10 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:49:10 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:49:10 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:49:10 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:49:10 +0100
+
+
+Started POST "/search" for ::1 at 2016-02-22 20:52:31 +0100
+Processing by ContactsController#search as HTML
+  Parameters: {"contact"=>{"letter"=>"M"}, "authenticity_token"=>"GUpykN2SXEloBy/bhhBcSMbdMUzpzr+kUzZG6Ik4jQxuHR1QRJMsgu2NP7zaO3v3u95HPxxurYcx4OyMIGd6lg=="}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms)
+
+ActionView::MissingTemplate (Missing template contacts/search, application/search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/mario/Documents/IronHack/Week4/Day1/projects/adress_book/adress_book/app/views"
+):
+  app/controllers/contacts_controller.rb:48:in `search'
+
+
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (54.8ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (92.6ms)
+
+
+Started POST "/search" for ::1 at 2016-02-22 20:53:32 +0100
+Processing by ContactsController#search as HTML
+  Parameters: {"contact"=>{"letter"=>"M"}, "authenticity_token"=>"GUpykN2SXEloBy/bhhBcSMbdMUzpzr+kUzZG6Ik4jQxuHR1QRJMsgu2NP7zaO3v3u95HPxxurYcx4OyMIGd6lg=="}
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/search.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-22 20:53:32 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-22 20:53:32 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-22 20:53:32 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-22 20:53:32 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-22 20:53:32 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-22 20:53:32 +0100
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-22 20:53:32 +0100
+
+
+Started POST "/search" for ::1 at 2016-02-22 20:53:42 +0100
+Processing by ContactsController#search as HTML
+  Parameters: {"contact"=>{"letter"=>"c"}, "authenticity_token"=>"GUpykN2SXEloBy/bhhBcSMbdMUzpzr+kUzZG6Ik4jQxuHR1QRJMsgu2NP7zaO3v3u95HPxxurYcx4OyMIGd6lg=="}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/search.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/search" for ::1 at 2016-02-22 20:53:47 +0100
+Processing by ContactsController#search as HTML
+  Parameters: {"contact"=>{"letter"=>"C"}, "authenticity_token"=>"GUpykN2SXEloBy/bhhBcSMbdMUzpzr+kUzZG6Ik4jQxuHR1QRJMsgu2NP7zaO3v3u95HPxxurYcx4OyMIGd6lg=="}
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/search.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/search" for ::1 at 2016-02-22 20:53:56 +0100
+Processing by ContactsController#search as HTML
+  Parameters: {"contact"=>{"letter"=>"M"}, "authenticity_token"=>"GUpykN2SXEloBy/bhhBcSMbdMUzpzr+kUzZG6Ik4jQxuHR1QRJMsgu2NP7zaO3v3u95HPxxurYcx4OyMIGd6lg=="}
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/search.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new" for ::1 at 2016-02-23 08:55:38 +0100
+Processing by ContactsController#new as HTML
+  Rendered contacts/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show/16" for ::1 at 2016-02-23 08:55:41 +0100
+Processing by ContactsController#show as HTML
+  Parameters: {"id_contact"=>"16"}
+  [1m[35mContact Load (1.3ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", 16]]
+  Rendered contacts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 35ms (Views: 22.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/favourite/16" for ::1 at 2016-02-23 08:55:43 +0100
+Processing by ContactsController#favourite as HTML
+  Parameters: {"id_contact"=>"16"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 16]]
+  [1m[35m (0.8ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts"
+  Rendered contacts/favourite.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 19.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-23 08:55:46 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY name ASC[0m
+  Rendered contacts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-23 09:01:34 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/mario/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5.1/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 24ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for ::1 at 2016-02-23 09:01:38 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts"  ORDER BY name ASC
+  Rendered contacts/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 195ms (Views: 192.7ms | ActiveRecord: 0.5ms)
