@@ -1,0 +1,8 @@
+<h1>Most visited pages:</h1>
+<ul>
+  <% @links.each do |link| %>
+    
+    <li> <%= "#{link.url}" %> <%= "/ created on #{link.created_at.strftime('%F')}" %> <%= "/ visited #{link.visits} times" %></li>
+
+  <% end %>
+</ul>
