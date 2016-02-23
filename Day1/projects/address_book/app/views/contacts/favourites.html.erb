@@ -3,7 +3,7 @@
   <% @favourites.each do |contact| %>
     
     <li> 
-        <a href="/show/<%= "#{contact.id}" %>"> <%= "#{contact.name}" %>  </a>
+        <a href="/contacts/<%= "#{contact.id}" %>"> <%= "#{contact.name}" %>  </a>
     </li>
 
   <% end %>

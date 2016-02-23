@@ -3,7 +3,7 @@
   <% @contacts.each do |contact| %>
     
     <li> 
-        <a href="/show/<%= "#{contact.id}" %>"> <%= "#{contact.name}" %>  </a>
+        <a href="/contacts/<%= "#{contact.id}" %>"> <%= "#{contact.name}" %>  </a>
     </li>
 
   <% end %>
@@ -21,3 +21,5 @@
   <input type="hidden" name="authenticity_token"
       value="<%= form_authenticity_token %>">
 </form>
+
+<a href="/favourites">Favourites</a>

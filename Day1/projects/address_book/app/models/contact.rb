@@ -12,13 +12,7 @@ class Contact < ActiveRecord::Base
 
 
   def self.search(letter)
-    contacts = []
-
-    contacts = Contact.all.select do | contact |
-      contact.name.first == letter
-    end
-
-    contacts
+    Contact.where("name like \'#{letter}%\'")
   end
 
 end

@@ -26,27 +26,28 @@ class ContactsController < ApplicationController
   end
 
   def show
-    @contact = Contact.find(params[:id_contact])
-    render 'show'
+    @contact = Contact.find_by(id: params[:id_contact]) || render_404(params)
+
   end
 
   def error
     render 'error'
   end
 
+  def favourites
+    @favourites = Contact.all_favourites
+  end
+
   def favourite
     @contact = Contact.find(params[:id_contact])
     @contact.favourite = true;
     @contact.save
-    @favourites = Contact.all_favourites
-    render 'favourite'
+    redirect_to("/favourites")
   end
 
   def search
-
     @contacts = Contact.search(params[:contact][:letter])
     render 'search'
-
   end
 
 end
