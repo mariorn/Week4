@@ -1,0 +1,25 @@
+
+<% if @product.errors.any? %>
+    <ul>
+      <% @product.errors.full_messages.each do |error| %>
+        <li> <%= "#{error}" %> </li>
+      <% end %>
+    </ul>
+<% end %>
+
+<%= form_for  [@user, @product] do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <br>
+  <%= f.label :deadline %>
+  <%= f.date_field :deadline %>
+  <br>
+  <%= f.submit 'Save' %>
+
+<% end %>
+
+<br>
+<%= link_to("Cancel", user_products_path(@user)) %>

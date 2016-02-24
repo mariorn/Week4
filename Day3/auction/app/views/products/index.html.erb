@@ -1,0 +1,16 @@
+<h1>Products:</h1>
+<ul>
+  <% @products.each do |product| %>
+    
+    <li> <%= "#{product.title} - #{product.description} - #{product.deadline}" %>
+    <%= link_to("Edit", edit_user_product_path(product.user_id, product)) %>
+    <%= link_to("View", user_product_path(product.user_id, product)) %>
+
+    </li>
+
+
+  <% end %>
+</ul>
+
+
+<%= link_to("Back", "/") %> 
