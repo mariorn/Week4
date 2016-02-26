@@ -6,8 +6,16 @@ Rails.application.routes.draw do
     resources :products
   end
 
+  resources :users do
+      resources :bids
+  end
+
   resources :products do
       resources :bids
   end
 
+
+
 end
+
+

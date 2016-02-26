@@ -1,0 +1,12 @@
+<h1>Bids for <%= @product.title %> product:</h1>
+<ul>
+  <% @product.bids.each do |bid| %>
+    
+    <li> <%= "#{bid.amount} - #{bid.user_id} " %>
+
+    </li>
+
+
+  <% end %>
+</ul>
+

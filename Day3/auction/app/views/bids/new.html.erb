@@ -1,0 +1,23 @@
+
+<% if flash[:alert]  %>
+<%= flash[:alert]  %>
+<% end %>
+
+<% if @bid.errors.any? %>
+    <ul>
+      <% @bid.errors.full_messages.each do |error| %>
+        <li> <%= "#{error}" %> </li>
+      <% end %>
+    </ul>
+<% end %>
+
+<%= form_for  [@product, @bid] do |f| %>
+  <%= f.label :user_id %>
+  <%= f.text_field :user_id %>
+  <br>
+  <%= f.label :amount %>
+  <%= f.text_field :amount %>
+  <br>
+  <%= f.submit 'Save' %>
+<% end %>
+

@@ -4,4 +4,9 @@
 <h2><%= @product.description %></h2>
 <h2><%= @product.deadline %></h2>
 
-<%= link_to("Back", user_products_path(@user)) %> 
+
+<%= link_to("New Bid", new_product_bid_path(@product)) %> 
+<br>
+<%= link_to("Actual Bids", product_bids_path(@product)) %> 
+<br>
+<%= link_to("Back", products_path(@user)) %> 

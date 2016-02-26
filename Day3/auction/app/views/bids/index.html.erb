@@ -1,0 +1,15 @@
+<h1>All bids for <%= @product.title %> product</h1>
+<ul>
+  <% @result.each_with_index do |bid, index| %>
+    
+    <li> <%= "#{bid[0]} - #{bid[1]} " %>
+
+    </li>
+
+
+  <% end %>
+</ul>
+
+
+<br>
+<%= link_to("Back", product_path(@product)) %> 

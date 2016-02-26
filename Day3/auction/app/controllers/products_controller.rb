@@ -43,8 +43,8 @@ class ProductsController < ApplicationController
 
 
   def show
-    @user = User.find(params[:user_id])
-    @product = @user.products.find(params[:id])
+    @product = Product.find(params[:id])
+    @bid = Bid.new
   end
 
 
