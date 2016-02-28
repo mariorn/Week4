@@ -1,0 +1,74 @@
+
+
+<div class="row">
+  <div class="columns is-multiline is-mobile">
+    <div class="column is-8">
+
+      <div class="row align-stretch today">
+        <h2> 
+          Concerts Today: <%= Date.today.strftime("%d %m %Y") %>
+        </h2>
+      </div>
+
+      <div class="row align-stretch">
+        <ul>
+          <% @concerts_today.each do |concert| %>
+
+            <li>
+              <div class="column is-half is-offset-quarter">
+                <div class="box">
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img src= <%= Artist.find(concert.artist_id).img %> alt="Image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong> <%= link_to("#{concert.artist_name} ", "/artist/#{concert.artist_id}/details") %> </strong> 
+                            <small>@<%= Artist.find(concert.artist_id).name %> </small>
+                          <br>
+                          <%= Artist.find(concert.artist_id).web %>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+            </li>
+
+          <% end %>
+
+          <% if @concerts_today.length == 0 %>
+            <li>
+                No concerts today.
+            </li>
+          <% end %>
+
+        </ul>
+      </div>
+
+
+    </div>
+
+    <div class="column is-4 ">
+      <%= render 'concerts/month' %>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="column is-3">
+      <p class="control is-grouped">
+      <%= form_for @concert, url: concerts_by_price_path(@concert) do |f| %>
+        <%= f.number_field :price , :placeholder => "Concert by price", class: "input"%>
+        <%= f.submit 'Search', class: "button is-info" %>
+      <% end %>
+      </p>
+      </div>
+  </div>
+
+
+
+

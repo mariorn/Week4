@@ -1,0 +1,40 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require_bulma
+ */
+@import "bulma";
+
+body {
+    color: #69707a;
+    font-size: 1rem;
+    line-height: 1.428571428571429;
+    margin-left: 1rem;
+}
+
+
+.row.today{
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+
+.block:not(:last-child), .content:not(:last-child), .title:not(:last-child), .subtitle:not(:last-child), .message:not(:last-child), .notification:not(:last-child), .highlight:not(:last-child), .navbar:not(:last-child), .tabs:not(:last-child) {
+    margin-bottom: 20px;
+    margin-top: 1rem;
+}
+
+.new_concert{    
+  display: inline-flex;
+}

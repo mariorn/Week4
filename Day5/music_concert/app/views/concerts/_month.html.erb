@@ -1,0 +1,13 @@
+
+
+
+<% if @concerts_month %>
+    <ul>
+      <h5>This month:</h5>
+      <% @concerts_month.each do |concert| %>
+        <li> <%= "#{concert.date} - #{concert.artist_name}" %> </li>
+      <% end %>
+    </ul>
+<% end %>
+
+

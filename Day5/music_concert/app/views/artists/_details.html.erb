@@ -1,0 +1,50 @@
+
+
+
+ <div class="row align-stretch">
+    <div class="column is-half is-offset-quarter">
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src= <%= @artist.img %> alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong> <%= @artist.name %> </strong> 
+                  <small>@<%= @artist.name %> </small>
+                <br>
+                <%= @artist.web %>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="column is-half is-offset-quarter">
+      <h4>Next concerts: </h4>
+
+      <ul>
+        <% @concerts.each do |concert| %>
+
+          <li>
+              <%= link_to("#{concert.date} ", 
+                  concert_artist_path(concert.id, concert.artist_id)) %>
+
+          </li>
+
+        <% end %>
+
+        <% if @concerts.length == 0 %>
+          <li>
+              No concerts today.
+          </li>
+        <% end %>
+
+      </ul>
+    </div>
+    
+  </div>

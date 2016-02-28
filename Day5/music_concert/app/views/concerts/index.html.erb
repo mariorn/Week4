@@ -1,0 +1,41 @@
+
+  
+<%= flash_message(@concert) %>
+<div class="column is-12">
+  <div class="column is-12">
+    Concerts:
+  </div>
+  <div class="column is-12">
+
+      <% @concerts.each do |concert| %>
+          <div class="columns is-gapless">
+              <div class="column is-3">
+                <%= link_to("#{concert.artist_name}", 
+                            concert_artist_path(concert, concert.artist_id)) %>
+                <%= " - #{concert.city} - #{concert.date.strftime("%Y-%m-%d")} " %>
+              </div>
+              <div class="column is-2">
+                <a class="button is-warning" href= <%= edit_concert_path(concert) %> >
+                  <i class="fa fa-check"></i>
+                  Edit
+                </a>
+                <a class="button is-danger" href= <%= concert_path(concert) %> >
+                  <i class="fa fa-check"></i>
+                  Delete
+                </a>
+              </div>
+
+          </div>
+
+      <% end %>
+
+  </div>
+</div>
+
+
+<a class="button is-success" href= <%= new_concert_path %>>
+  <i class="fa fa-check"></i>
+  Add new concert
+</a>
+
+<br>

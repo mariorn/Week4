@@ -1,0 +1,20 @@
+<%= flash_message(@artist) %>
+<%= errors_messages(@artist) %>
+
+<%= form_for [@artist] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :img %>
+  <%= f.text_field :img %>
+  <br>
+  <%= f.label :web %>
+  <%= f.text_field :web %>
+  <br>
+  <%= f.submit 'Save' %>
+
+<% end %>
+
+<br>
+<%= link_to("Cancel", artists_path) %>
+<br><br>

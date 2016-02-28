@@ -1,0 +1,34 @@
+
+
+ <div class="row align-stretch">
+    <div class="column is-half is-offset-quarter">
+
+<h1>Comments about the concert:</h1>
+
+<ul>
+  <% @comments.each do |comment| %>
+    
+    <li> 
+      <%= "#{comment.comment} - #{comment.email} " %>
+    </li>
+
+  <% end %>
+</ul>
+
+<br>
+
+<h3>Add new comment about the concert:</h3>
+
+<%= form_for [@comment], url: concert_artist_path(@concert, @concert.artist_id) do |f| %>
+  <%= f.label :comment %>
+  <%= f.text_field :comment %>
+  <br>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <br>
+  <%= f.submit 'Save' %>
+
+<% end %>
+
+</div>
+</div>

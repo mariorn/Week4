@@ -1,0 +1,69 @@
+{
+  "name": "bulma",
+  "version": "0.0.15",
+  "homepage": "http://bulma.io",
+  "author": {
+    "name": "jgthms",
+    "email": "bbxdesign@gmail.com"
+  },
+  "description": "Modern CSS framework based on Flexbox",
+  "main": "bulma.sass",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgthms/bulma.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "responsive",
+    "framework"
+  ],
+  "bugs": {
+    "url": "https://github.com/jgthms/bulma/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "captain-git-hook": "~1.0.5",
+    "node-sass": "^3.4.2",
+    "postcss-cli": "^2.5.1"
+  },
+  "scripts": {
+    "autoprefix": "postcss --use autoprefixer --output css/bulma.css css/bulma.css",
+    "autoprefix-min": "postcss --use autoprefixer --output css/bulma.min.css css/bulma.min.css",
+    "build": "npm run clean && npm run build-sass && npm run build-sass-min && npm run autoprefix && npm run autoprefix-min",
+    "build-sass": "node-sass --output-style expanded --source-map true --output css/ bulma.sass --outFile css/bulma.css",
+    "build-sass-min": "node-sass --output-style compressed --source-map true --output css/ bulma.sass css/bulma.min.css",
+    "clean": "rm -rf css",
+    "pre-push": "npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
+  "gitHead": "5347cc411be0cdb5379edb91496b8ba7dc0fe5c9",
+  "_id": "bulma@0.0.15",
+  "_shasum": "da279847515e735e5b627df1398d93dd3e6e7e82",
+  "_from": "bulma@latest",
+  "_npmVersion": "3.6.0",
+  "_nodeVersion": "5.6.0",
+  "_npmUser": {
+    "name": "jgthms",
+    "email": "bbxdesign@gmail.com"
+  },
+  "dist": {
+    "shasum": "da279847515e735e5b627df1398d93dd3e6e7e82",
+    "tarball": "http://registry.npmjs.org/bulma/-/bulma-0.0.15.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "jgthms",
+      "email": "bbxdesign@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-9-west.internal.npmjs.com",
+    "tmp": "tmp/bulma-0.0.15.tgz_1456094916904_0.2805926934815943"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/bulma/-/bulma-0.0.15.tgz",
+  "readme": "ERROR: No README data found!"
+}

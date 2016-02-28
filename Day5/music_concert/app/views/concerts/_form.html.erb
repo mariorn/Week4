@@ -1,0 +1,30 @@
+
+<%= flash_message(@concert) %>
+<%= errors_messages(@concert) %>
+
+<%= form_for [@concert] do |f| %>
+  <%= f.label :artist %>
+  <%= f.text_field :artist_name %>
+  <br>
+  <%= f.label :venue %>
+  <%= f.text_field :venue %>
+  <br>
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+  <br>
+  <%= f.label :date %>
+  <%= f.date_field :date %>
+  <br>
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+  <br>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <br>
+  <%= f.submit 'Save' %>
+
+<% end %>
+
+<br>
+<%= link_to("Cancel", concerts_path) %>
+<br><br>

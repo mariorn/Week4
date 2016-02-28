@@ -1,0 +1,52 @@
+
+
+<%= flash_message(@artist) %>
+
+<div class="column is-12">
+  <div class="column is-12">
+    Concerts:
+  </div>
+  <div class="column is-12">
+
+      <% @artists.each do |artist| %>
+          <div class="columns is-gapless">
+              <div class="column is-2">
+                <%= "#{artist.name} " %>
+              </div>
+              <div class="column is-4">
+                <a class="button is-success" href=<%= "/artist/#{artist.id}/details" %> >
+                  <i class="fa fa-check"></i>
+                  View
+                </a>
+                <a class="button is-warning" href= <%= "/artist/#{artist.id}/edit" %> >
+                  <i class="fa fa-check"></i>
+                  Edit
+                </a>
+                <a class="button is-danger" href= <%= artists_path(artist) %> >
+                  <i class="fa fa-check"></i>
+                  Delete
+                </a>
+                <a class="button is-success" href= <%= "/artist/#{artist.id}/concerts" %> >
+                  <i class="fa fa-check"></i>
+                  Show Concerts
+                </a>
+
+              </div>
+
+          </div>
+
+      <% end %>
+
+  </div>
+</div>
+
+
+<a class="button is-success" href= <%= artist_new_path %>>
+  <i class="fa fa-check"></i>
+  Add new concert
+</a>
+
+
+
+
+<br>
